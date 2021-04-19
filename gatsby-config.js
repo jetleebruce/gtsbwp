@@ -13,7 +13,9 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+
   plugins: [
+    `gatsby-plugin-image`,
     {
       /**
        * First up is the WordPress source plugin that connects Gatsby
@@ -23,6 +25,7 @@ module.exports = {
        * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
        *
        */
+
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
