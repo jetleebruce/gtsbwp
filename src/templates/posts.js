@@ -9,6 +9,7 @@ export const PageQuery = graphql`
       excerpt
       title
       id
+      content
     }
   }
 `
@@ -20,7 +21,13 @@ const Posts = ({ data }) => {
     <Layout>
       <div>
         <h2>Post Template</h2>
-        <p>{post.title}</p>
+        <div>
+          <p>{post.title}</p>
+        </div>
+        <div>
+          <p>{post.excerpt}</p>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
     </Layout>
   )
