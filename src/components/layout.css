@@ -600,3 +600,47 @@ pre tt:after {
   display: flex;
   flex-direction: column;
 }
+
+.pagelistwrapper {
+  margin: 0 auto;
+}
+.pagelist{
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+}
+
+.left{
+  display: flex;
+  flex-direction: row; 
+  min-width: 450px;
+  height: 100vh;
+}
+
+.menu{
+ min-width: 150px;
+ padding-left: 45px;
+ border-right: 1px solid #C7CEF1;
+}
+
+.menu-top{
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.menu-top img{
+  /* margin-left: 45px; */
+  margin-top: 75px;
+}
+
+.menu-buttons{
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+ 
+}
+
