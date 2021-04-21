@@ -55,6 +55,15 @@ const Objectlist = ({ data }) => {
             <div className="logowrapper">
               <StaticImage src="../images/logo.png" />
             </div>
+            <div className="choose-menu">
+              <ul>
+                <li>Einfamilienhaus</li>
+                <li>Mehrfamilienhaus</li>
+                <li>Büro</li>
+                <li>Lagerhalle</li>
+                <li>Gewerbe</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="right">content</div>

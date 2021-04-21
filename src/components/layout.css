@@ -640,7 +640,35 @@ pre tt:after {
 .menu-buttons{
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 100px;
  
 }
 
+.choose{
+  width: 100%;
+}
+
+.logowrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
+}
+
+.choose-menu{
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+}
+
+.choose-menu ul {
+  list-style-type: none;
+  margin: 64px 0;
+  padding: 0;
+}
+
+.choose-menu ul li {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2C3876;
+}
