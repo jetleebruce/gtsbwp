@@ -10,6 +10,15 @@ export const PageQuery = graphql`
       edges {
         node {
           title
+          id
+          slug
+          content
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
         }
       }
     }
@@ -32,21 +41,21 @@ const Objectlist = ({ data }) => {
                 src="../images/homemenu.png"
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="A Gatsby astronaut"
+                alt="Home menu"
                 style={{ margin: `40px 0`, width: `60px`, height: `60px` }}
               />
               <StaticImage
                 src="../images/choosemenu.png"
+                alt="Choose menu"
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="A Gatsby astronaut"
                 style={{ margin: `40px 0`, width: `60px`, height: `60px` }}
               />
               <StaticImage
                 src="../images/detailmenu.png"
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="A Gatsby astronaut"
+                alt="Detail menu"
                 style={{ margin: `40px 0`, width: `60px`, height: `60px` }}
               />
             </div>
@@ -66,7 +75,25 @@ const Objectlist = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="right">content</div>
+        <div className="right">
+          <div className="list-wrapper">
+            {data.allWpPost.edges.map(({ node }) => (
+              <div className="card" key={node.id}>
+                <div className="card-image">
+                  {/* <StaticImage
+                    src={node.featuredImage.node.sourceUrl}
+                    alt="Card image"
+                  /> */}
+                  <img src={node.featuredImage.node.sourceUrl} />
+                </div>
+                <div className="card-descr">
+                  <h2>{node.title}</h2>
+                </div>
+                <div className="card-icon">icon back</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -634,7 +634,9 @@ pre tt:after {
 
 .menu-top img{
   /* margin-left: 45px; */
-  margin-top: 75px;
+  margin-top: 55px;
+  width: 64px;
+  height: 96px;
 }
 
 .menu-buttons{
@@ -646,12 +648,14 @@ pre tt:after {
 
 .choose{
   width: 100%;
+  border-right: 1px solid #C7CEF1;
+
 }
 
 .logowrapper{
   display: flex;
   justify-content: center;
-  margin-top: 105px;
+  margin-top: 77px;
 }
 
 .choose-menu{
@@ -671,4 +675,37 @@ pre tt:after {
     font-size: 20px;
     line-height: 130%;
     color: #2C3876;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  padding-left: 97px;
+  padding-right: 75px;
+  margin-bottom: 40px;
+}
+
+.list-wrapper{
+  padding-top: 55px;
+}
+
+.card-image{
+  width: 215px;
+  height: 143px;
+  
+}
+
+.card-image img{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 40px;
+}
+
+.card-descr h2{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  color: #434343;
 }
